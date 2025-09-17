@@ -23,3 +23,69 @@ function getcheapestphone(mobiles) {
 
 const cheap= getcheapestphone(mobiles);
 console.log('the cheap phone is:', cheap);
+
+
+
+const vegetables = [
+    { name: 'Carrot', price: 50, type: 'Root', color: 'orange' },
+    { name: 'Spinach', price: 30, type: 'Leafy', color: 'green' },
+    { name: 'Tomato', price: 40, type: 'Fruit', color: 'red' },
+    { name: 'Cabbage', price: 35, type: 'Leafy', color: 'green' },
+    { name: 'Beetroot', price: 45, type: 'Root', color: 'red' }
+];
+
+
+
+function lowVeg(vegetables) {
+    let low = vegetables [0]; //asseme the first veg is the  lowest one 
+
+
+for (let veg of vegetables){
+    if (veg.price < low.price){
+        low = veg; //update if a lower veg is found
+    }
+     
+
+}
+return low;
+}
+
+const lowVegPrice = lowVeg(vegetables);//call the function
+console.log('the lowest price veg is:', lowVegPrice );
+
+
+
+
+
+const vegetables1 = [
+    { name: 'Carrot', price: 50, type: 'Root', color: 'orange' },
+    { name: 'Spinach', price: 30, type: 'Leafy', color: 'green' },
+    { name: 'Tomato', price: 40, type: 'Fruit', color: 'red' },
+    { name: 'Cabbage', price: 70, type: 'Leafy', color: 'green' },
+    { name: 'Beetroot', price: 80, type: 'Root', color: 'red' }
+];
+
+
+
+function highVeg(vegetables1) {
+    let high= vegetables [0]; //asseme the first veg is the  lowest one 
+
+
+for (let veg of vegetables1){
+    if (veg.price > high.price){
+        high = veg; //update if a lower veg is found
+    }
+     
+
+}
+return high;
+}
+
+const highVegetables =highVeg(vegetables1);//call the function
+console.log('the highest price veg is:', highVegetables );
+
+
+
+
+
+

@@ -36,3 +36,57 @@ const result = calculator(3,7 ,'multiply');  //f10 dile ta function ar vitore ch
                                              //ar f11 dile ta main function ar votore chole jabe means ta multiplt ar operation korle ta 
                                             //f11 dile ta multiply function ar main function ar vitore chole jabe
 console.log('the number is :', result );
+
+
+
+
+
+// calculator 
+
+
+function addition( number1, number2){
+    return number1+ number2;
+}
+
+
+function subtraction( number1, number2){
+    return number1 -  number2;
+}
+
+
+function multiplication( number1, number2){
+    return number1 * number2;
+}
+
+function division( number1, number2){
+    return number1  / number2;
+}
+
+
+
+
+function calculator2 ( b,d , operation ){
+    if (operation === 'addition'){
+        const result = addition(b,d);
+        return result;
+    }
+    else if (operation === 'subtraction'){
+        const result = subtraction(b,d);
+        return result;
+    }
+    else if (operation === 'multiplication'){
+        const result = multiplication(b,d);
+        return result;
+    }
+    else if (operation === 'division'){
+        const result = division(b,d);
+        return result;
+    }
+    else {
+    return 'operation is not allowed';
+}
+}
+
+
+const resultMain = calculator2( 23, 56 , 'addition');
+console.log('the result is :', resultMain);
